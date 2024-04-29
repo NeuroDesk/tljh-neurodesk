@@ -5,6 +5,8 @@ Tells TLJH to use [DockerSpawner](https://jupyterhub-dockerspawner.readthedocs.i
 ## System Requirements
 TLJH and the neurodesk plugin require Ubuntu 20.04+ or Debian 11+
 
+Important: The installation script will fail if you have docker-ce installed already, and it requires the Debian docker image. Make sure to remove docker-ce before Installing tljh-neurodesk!
+
 ## Install
 
 Include `--plugin tljh-neurodesk` in your TLJH install script. For example, here user `neurodesk` with password `password` installs TLJH with `tljh-neurodesk`:
